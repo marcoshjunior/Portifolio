@@ -61,6 +61,8 @@ footer p {
 }
 
 nav a:hover {
-  color: #01a5b1;
-  text-decoration: underline;
+  color: black;
+  background-color: #01a5b1;
+  padding: 11px;
+  border-radius: 10px;
 }
