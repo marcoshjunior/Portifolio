@@ -66,3 +66,8 @@ nav a:hover {
   padding: 11px;
   border-radius: 10px;
 }
+
+section {
+  margin: 0px 60px 0px 60px;
+  text-align: center;
+}
