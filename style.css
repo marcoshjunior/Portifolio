@@ -1,0 +1,20 @@
+* {
+  border: 0px;
+  padding: 0px;
+}
+
+body {
+  min-width: 300px;
+  max-width: 1000px;
+  background-color: #f1f0f0;
+}
+
+nav {
+  border: 3px solid black;
+}
+
+nav > ul {
+  display: inline-flex;
+  list-style-type: none;
+  padding-left: 35px;
+}
