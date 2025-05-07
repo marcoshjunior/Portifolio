@@ -55,9 +55,17 @@ nav > a:hover {
 main {
   min-width: 300px;
   max-width: 1000px;
+  margin: auto;
+  padding: 25px;
 }
 
-section {
+.inicio {
+  padding: 150px 0px 110px 0px;
+  font-size: larger;
+}
+.inicio h1,
+p {
+  text-align: center;
 }
 
 .inicio > ul {
