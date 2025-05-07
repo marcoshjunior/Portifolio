@@ -58,3 +58,10 @@ nav > a:hover {
   background-color: var(--cor-principal);
   color: black;
 }
+
+section {
+}
+
+.inicio > ul {
+  list-style: none;
+}
