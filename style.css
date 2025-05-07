@@ -13,11 +13,6 @@ body {
   background-color: var(--cor-principal);
 }
 
-main {
-  min-width: 300px;
-  max-width: 1000px;
-}
-
 nav {
   font-weight: bold;
   margin: -10px -10px 0px -10px;
@@ -26,7 +21,6 @@ nav {
   justify-content: space-between;
   padding: 10px 25px;
 }
-
 nav > ul {
   list-style: none;
   display: flex;
@@ -45,7 +39,6 @@ nav > ul {
   background-color: var(--cor-link);
   border-radius: 30px;
 }
-
 nav > a {
   color: var(--cor-principal);
   background-color: var(--cor-link);
@@ -57,6 +50,11 @@ nav > a {
 nav > a:hover {
   background-color: var(--cor-principal);
   color: black;
+}
+
+main {
+  min-width: 300px;
+  max-width: 1000px;
 }
 
 section {
