@@ -1,6 +1,6 @@
 :root {
   --cor-principal: #f1f0f0;
-  --cor-link: #f13223;
+  --cor-secundaria: #f13223;
 }
 
 * {
@@ -46,12 +46,12 @@ nav > ul {
 }
 .navegacao:hover {
   color: #f1f0f0;
-  background-color: var(--cor-link);
+  background-color: var(--cor-secundaria);
   border-radius: 30px;
 }
 nav > a {
   color: var(--cor-principal);
-  background-color: var(--cor-link);
+  background-color: var(--cor-secundaria);
   padding: 7px 10px 7px 10px;
   border-radius: 30px;
   text-decoration: none;
@@ -71,7 +71,7 @@ main {
 
 section {
   border-bottom: 2px;
-  border-color: black;
+  border-color: var(--cor-secundaria);
   border-style: solid;
 }
 
@@ -108,13 +108,6 @@ section {
 .fontes .sobreMim {
   flex: 1;
   height: auto;
-  min-height: 120px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
 }
 @media (min-width: 600px) {
   .fontes i {
