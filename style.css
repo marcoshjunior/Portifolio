@@ -94,38 +94,9 @@ section {
   text-align: center;
   padding: 30px 0px 50px 0px;
 }
-.fontes i {
-  font-size: 75px;
-}
 .sobreMim p {
   max-width: 600px;
   text-indent: 20px;
-}
-.caixas-lado-a-lado {
-  display: flex;
-  gap: 10px;
-}
-.fontes .sobreMim {
-  flex: 1;
-  height: auto;
-}
-@media (min-width: 600px) {
-  .fontes i {
-    width: 40%;
-    text-align: center;
-  }
-}
-@media (max-width: 600px) {
-  .caixas-lado-a-lado {
-    flex-direction: column;
-  }
-  .fontes {
-    margin: auto;
-    order: 2;
-  }
-  .sobreMim {
-    order: 1;
-  }
 }
 
 .projetos img {
