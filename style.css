@@ -95,8 +95,23 @@ section {
   padding: 30px 0px 50px 0px;
 }
 .sobreMim p {
-  max-width: 600px;
+  padding: 20px 0px 20px 0px;
+  margin: auto;
+  max-width: 800px;
   text-indent: 20px;
+}
+.icones {
+  padding: 20px 0px 20px 0px;
+}
+.icones ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.icones li {
+  padding: 5px 15px 5px 15px;
+  border-radius: 20px;
 }
 
 .projetos img {
