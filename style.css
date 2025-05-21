@@ -119,9 +119,32 @@ section {
   background-color: var(--cor-secundaria);
   color: var(--cor-principal);
 }
+.sobre > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor-principal);
+  background-color: var(--cor-secundaria);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px 10px 0px;
+  border-radius: 20px;
+  transition-duration: 0.1s;
+}
+.sobre > a:hover {
+  color: black;
+  background-color: var(--cor-principal);
+}
 
+.projetos h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
 .projetos img {
-  height: 200px;
+  height: 250px;
 }
 .projetos div {
   margin: 10px;
