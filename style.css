@@ -139,6 +139,10 @@ section {
   background-color: var(--cor-principal);
 }
 
+.container-projetos {
+  display: flex;
+  justify-content: center;
+}
 .projetos h1 {
   text-align: center;
   padding-bottom: 20px;
