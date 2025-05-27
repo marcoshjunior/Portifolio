@@ -1,6 +1,8 @@
 :root {
   --cor-principal: #f1f0f0;
   --cor-secundaria: #f13223;
+  --cor-cards: #c7bfbf;
+  --cor-backcards: #fd584c;
 }
 
 * {
@@ -114,6 +116,7 @@ section {
   border: 1.5px solid var(--cor-secundaria);
   border-radius: 20px;
   transition-duration: 0.1s;
+  cursor: pointer;
 }
 .icones li:hover {
   background-color: var(--cor-secundaria);
@@ -139,19 +142,49 @@ section {
   background-color: var(--cor-principal);
 }
 
-.container-projetos {
-  display: flex;
-  justify-content: center;
+.projetos {
+  padding: 1rem 2rem;
+  /*padding: 6rem 2rem;*/
 }
-.projetos h1 {
+.projetos-titulo {
   text-align: center;
+  font-size: 2.5rem; /*Talvez não precise*/
   padding-bottom: 20px;
 }
-.projetos img {
-  height: 250px;
+.projetos-caixa {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto; /*não muda nada*/
 }
-.projetos div {
-  margin: 10px;
+.projetos-card {
+  background-color: var(--cor-cards);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--cor-secundaria); /*talvez não precise*/
+  overflow: hidden;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.projetos-card:hover {
+  box-shadow: 0 10px 20px var(--cor-backcards);
+  transform: translateY(-10px) scale(1.03);
+}
+.projetos-imagem {
+  height: 330px;
+  width: 100%;
+  object-fit: cover;
+}
+.caixa-texto-projetos {
+  padding: 1.5rem;
+}
+.info-projetos {
+  margin-bottom: 5px;
+}
+.paragrafo-projetos {
+  color: black;
+  line-height: 1.25rem;
 }
 
 .servicos {
