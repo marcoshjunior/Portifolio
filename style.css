@@ -1,8 +1,13 @@
 :root {
-  --cor-principal: #f1f0f0;
-  --cor-secundaria: #f13223;
-  --cor-cards: #c7bfbf;
-  --cor-backcards: #fd584c;
+  --cor-principal: #1e1e2f;
+  --cor-texto-principal: #f4f4f5;
+  --cor-texto-secundario: #a1a1aa;
+  --cor-sombra-do-nav: rgba(0, 0, 0, 0.4);
+  --cor-botoes: #00adb5;
+  --cor-botoes-hover: #019ca3;
+  --cor-margens: #2c2c3e;
+  --cor-cards: #019ca3;
+  --cor-backcards: rgba(0, 0, 0, 0.4);
 }
 
 * {
@@ -20,7 +25,7 @@ nav {
   background-color: var(--cor-principal);
   font-weight: bold;
   margin: -10px -10px 0px 0px;
-  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.363);
+  box-shadow: 0px 5px 7px var(--cor-sombra-do-nav);
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
@@ -41,19 +46,19 @@ nav > ul {
   padding-top: 8px;
 }
 .navegacao {
-  color: black;
+  color: var(--cor-botoes);
   text-decoration: none;
   padding: 10px 10px;
   transition-duration: 0.1s;
 }
 .navegacao:hover {
-  color: #f1f0f0;
-  background-color: var(--cor-secundaria);
+  color: var(--cor-principal);
+  background-color: var(--cor-botoes-hover);
   border-radius: 30px;
 }
 nav > a {
   color: var(--cor-principal);
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-botoes);
   padding: 7px 10px 7px 10px;
   border-radius: 30px;
   text-decoration: none;
@@ -61,7 +66,7 @@ nav > a {
 }
 nav > a:hover {
   background-color: var(--cor-principal);
-  color: black;
+  color: var(--cor-botoes);
 }
 
 main {
@@ -73,13 +78,14 @@ main {
 
 section {
   border-bottom: 2px;
-  border-color: var(--cor-secundaria);
+  border-color: var(--cor-botoes);
   border-style: solid;
 }
 
 .inicio {
   padding: 190px 0px 265px 0px;
   font-size: larger;
+  color: var(--cor-texto-principal);
 }
 .inicio h1 {
   text-align: center;
@@ -90,17 +96,16 @@ section {
 
 .sobre h1 {
   text-align: center;
+  padding-top: 30px;
   padding-bottom: 30px;
-}
-.sobre h2 {
-  text-align: center;
-  padding: 30px 0px 50px 0px;
+  color: var(--cor-texto-principal);
 }
 .sobreMim p {
   padding: 20px 0px 20px 0px;
   margin: auto;
   max-width: 800px;
   text-indent: 20px;
+  color: var(--cor-texto-secundario);
 }
 .icones {
   padding: 20px 0px 20px 0px;
@@ -110,23 +115,24 @@ section {
   display: flex;
   justify-content: center;
   gap: 15px;
+  color: var(--cor-botoes);
 }
 .icones li {
   padding: 5px 15px 5px 15px;
-  border: 1.5px solid var(--cor-secundaria);
+  border: 1.5px solid var(--cor-botoes);
   border-radius: 20px;
   transition-duration: 0.1s;
   cursor: pointer;
 }
 .icones li:hover {
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-botoes-hover);
   color: var(--cor-principal);
 }
 .sobre > a {
   text-decoration: none;
   font-weight: bold;
   color: var(--cor-principal);
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-botoes);
   margin: auto;
   margin-top: 30px;
   margin-bottom: 50px;
@@ -139,7 +145,7 @@ section {
 }
 .sobre > a:hover {
   color: black;
-  background-color: var(--cor-principal);
+  background-color: var(--cor-botoes-hover);
 }
 
 .projetos {
@@ -148,8 +154,9 @@ section {
 }
 .projetos-titulo {
   text-align: center;
-  font-size: 2.5rem; /*Talvez não precise*/
+  font-size: 2rem; /*Talvez não precise*/
   padding-bottom: 20px;
+  color: var(--cor-texto-principal);
 }
 .projetos-caixa {
   display: grid;
@@ -162,7 +169,7 @@ section {
   background-color: var(--cor-cards);
   border-radius: 16px;
   backdrop-filter: blur(5px);
-  border: 1px solid var(--cor-secundaria); /*talvez não precise*/
+  border: 1px solid var(--cor-margens); /*talvez não precise*/
   overflow: hidden;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -183,10 +190,14 @@ section {
   margin-bottom: 5px;
 }
 .paragrafo-projetos {
-  color: black;
   line-height: 1.25rem;
 }
 
+.titulo-servico {
+  text-align: center;
+  padding-top: 20px;
+  color: var(--cor-texto-principal);
+}
 .servicos {
   margin-top: 70px;
   padding-bottom: 70px;
@@ -199,9 +210,13 @@ section {
   max-width: 600px;
   text-indent: 20px;
   height: auto;
+  color: var(--cor-texto-secundario);
+}
+.servico-caixas h1 {
+  color: var(--cor-texto-principal);
 }
 .servico-caixas {
-  border: 2px solid var(--cor-secundaria);
+  border: 2px solid var(--cor-margens);
   border-radius: 20px;
   margin: auto;
   width: 40%;
