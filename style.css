@@ -6,7 +6,7 @@
   --cor-botoes: #00adb5;
   --cor-botoes-hover: #019ca3;
   --cor-margens: #2c2c3e;
-  --cor-cards: #019ca3;
+  --cor-cards: #f4f4f5;
   --cor-backcards: rgba(0, 0, 0, 0.4);
 }
 
@@ -172,7 +172,6 @@ section {
   border: 1px solid var(--cor-margens); /*talvez não precise*/
   overflow: hidden;
   transition: all 0.2s ease;
-  cursor: pointer;
 }
 .projetos-card:hover {
   box-shadow: 0 10px 20px var(--cor-backcards);
