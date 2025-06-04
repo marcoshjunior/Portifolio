@@ -183,13 +183,26 @@ section {
   object-fit: cover;
 }
 .caixa-texto-projetos {
-  padding: 1.5rem;
+  padding: 0px 20px 15px 20px;
 }
 .info-projetos {
   margin-bottom: 5px;
 }
 .paragrafo-projetos {
   line-height: 1.25rem;
+}
+.link-projetos {
+  text-decoration: none;
+  color: black;
+  background-color: var(--cor-botoes);
+  padding: 7px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+.link-projetos:hover {
+  background-color: var(--cor-botoes-hover);
+  color: black;
 }
 
 .titulo-servico {
