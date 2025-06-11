@@ -1,13 +1,13 @@
 :root {
-  --cor-principal: #1e1e2f;
-  --cor-texto-principal: #f4f4f5;
-  --cor-texto-secundario: #a1a1aa;
-  --cor-sombra-do-nav: rgba(0, 0, 0, 0.4);
-  --cor-botoes: #00adb5;
-  --cor-botoes-hover: #019ca3;
-  --cor-margens: #2c2c3e;
-  --cor-cards: #f4f4f5;
-  --cor-backcards: rgba(0, 0, 0, 0.4);
+  --cor-principal: #f9fafb;
+  --cor-texto-principal: #000000;
+  --cor-texto-secundario: #1a1a1a;
+  --cor-sombra-do-nav: rgba(0, 0, 0, 0.1);
+  --cor-botoes: #10b981;
+  --cor-botoes-hover: #059669;
+  --cor-margens: #e5e7eb;
+  --cor-cards: #f9fafb;
+  --cor-backcards: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -115,7 +115,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 15px;
-  color: var(--cor-botoes);
+  color: var(--cor-texto-principal);
 }
 .icones li {
   padding: 5px 15px 5px 15px;
