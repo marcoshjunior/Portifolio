@@ -21,6 +21,11 @@ body {
   background-color: var(--cor-principal);
 }
 
+html {
+  scroll-padding-top: 70px;
+  scroll-behavior: smooth;
+}
+
 nav {
   background-color: var(--cor-principal);
   font-weight: bold;
@@ -53,7 +58,7 @@ nav > ul {
 }
 .navegacao:hover {
   color: var(--cor-principal);
-  background-color: var(--cor-botoes-hover);
+  background-color: var(--cor-botoes);
   border-radius: 30px;
 }
 nav > a {
