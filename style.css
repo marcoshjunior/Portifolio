@@ -260,9 +260,8 @@ footer {
   margin: 40px;
   text-align: center;
 }
-.redes img {
-  height: 45px;
-  border-radius: 50%;
+.redes i {
+  font-size: 40px;
 }
 .redes a {
   text-decoration: none;
