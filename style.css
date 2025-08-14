@@ -98,6 +98,11 @@ section {
 .inicio p {
   text-align: center;
 }
+@media (min-width: 600px) and (max-width: 768px) {
+  .inicio {
+    padding: 200px 0px 290px 0px;
+  }
+}
 
 .sobre h1 {
   text-align: center;
