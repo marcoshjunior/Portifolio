@@ -73,11 +73,6 @@ nav > a:hover {
   background-color: var(--cor-principal);
   color: var(--cor-botoes);
 }
-@media (max-width: 435px) {
-  .navegacao {
-    /*padding: 6px 6px;*/
-  }
-}
 
 main {
   min-width: 300px;
