@@ -68,6 +68,7 @@ menu > a {
   border-radius: 30px;
   text-decoration: none;
   transition-duration: 0.1s;
+  display: block;
 }
 menu > a:hover {
   background-color: var(--cor-principal);
@@ -79,12 +80,6 @@ main {
   max-width: 1000px;
   margin: auto;
   padding: 25px;
-}
-
-section {
-  border-bottom: 2px;
-  border-color: var(--cor-botoes);
-  border-style: solid;
 }
 
 .inicio {
