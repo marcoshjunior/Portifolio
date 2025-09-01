@@ -18,7 +18,7 @@
 }
 
 body {
-  background-color: var(--cor-principal);
+  background-color: var(--cor-margens);
 }
 
 html {
@@ -80,6 +80,7 @@ main {
   max-width: 1000px;
   margin: auto;
   padding: 25px;
+  background-color: var(--cor-principal);
 }
 
 .inicio {
@@ -94,8 +95,9 @@ main {
   text-align: center;
 }
 
-.sobre h1 {
+.sobre h2 {
   text-align: center;
+  font-size: 1.7rem;
   padding-top: 30px;
   padding-bottom: 30px;
   color: var(--cor-texto-principal);
@@ -154,7 +156,7 @@ main {
 }
 .projetos-titulo {
   text-align: center;
-  font-size: 2rem; /*Talvez não precise*/
+  font-size: 1.7rem;
   padding-bottom: 20px;
   color: var(--cor-texto-principal);
 }
@@ -207,6 +209,7 @@ main {
 
 .titulo-servico {
   text-align: center;
+  font-size: 1.7rem;
   padding-top: 20px;
   color: var(--cor-texto-principal);
 }
@@ -238,14 +241,10 @@ main {
   overflow-wrap: break-word;
   overflow: hidden;
 }
-@media (max-width: 600px) {
-  .servico-caixas {
-    width: 100%;
-  }
-}
 
-footer {
-  background-color: var(--cor-principal);
+.titulo-redes {
+  text-align: center;
+  font-size: 1.7em;
 }
 .minhas-redes {
   display: flex;
@@ -268,4 +267,11 @@ footer {
 }
 .redes p {
   margin-top: 5px;
+}
+
+footer {
+  background-color: var(--cor-botoes);
+  text-align: center;
+  padding: 5px;
+  margin: 0px -10px -10px -10px;
 }

@@ -6,3 +6,8 @@
     justify-content: center;
   }
 }
+@media screen and (max-width: 600px) {
+  .servico-caixas {
+    width: 100%;
+  }
+}
