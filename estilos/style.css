@@ -97,24 +97,27 @@ section.inicio > div {
   text-align: left;
 }
 
-.sobre h2 {
+section.sobre {
+  height: 100vh;
+}
+section.sobre h2 {
   text-align: center;
   font-size: 1.7rem;
   padding-top: 30px;
   padding-bottom: 30px;
   color: var(--cor-texto-principal);
 }
-.sobreMim p {
+section > div.sobreMim > p {
   padding: 20px 0px 20px 0px;
   margin: auto;
   max-width: 600px;
   text-align: center;
   color: var(--cor-texto-secundario);
 }
-.icones {
+section > div.icones {
   padding: 20px 0px 20px 0px;
 }
-.icones ul {
+.icones > ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -152,10 +155,12 @@ section.inicio > div {
   background-color: var(--cor-botoes-hover);
 }
 
+/*
 .projetos {
   padding: 1rem 2rem;
-  /*padding: 6rem 2rem;*/
+  padding: 6rem 2rem;
 }
+*/
 .projetos-titulo {
   text-align: center;
   font-size: 1.7rem;
@@ -209,6 +214,9 @@ section.inicio > div {
   color: black;
 }
 
+section#servicos {
+  height: 100vh;
+}
 .titulo-servico {
   text-align: center;
   font-size: 1.7rem;
