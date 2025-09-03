@@ -22,6 +22,7 @@ body {
 }
 
 html {
+  /*talvez não precise*/
   scroll-padding-top: 70px;
   scroll-behavior: smooth;
 }
@@ -83,16 +84,17 @@ main {
   background-color: var(--cor-principal);
 }
 
-.inicio {
-  padding: 190px 0px 265px 0px;
+section.inicio {
+  height: 100vh;
   font-size: larger;
   color: var(--cor-texto-principal);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
-.inicio h1 {
-  text-align: center;
-}
-.inicio p {
-  text-align: center;
+section.inicio > div {
+  text-align: left;
 }
 
 .sobre h2 {
