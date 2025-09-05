@@ -92,6 +92,7 @@ section.inicio {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  border-bottom: 2px solid var(--cor-botoes);
 }
 section.inicio > div {
   text-align: left;
@@ -99,6 +100,7 @@ section.inicio > div {
 
 section.sobre {
   height: 100vh;
+  border-bottom: 2px solid var(--cor-botoes);
 }
 section.sobre h2 {
   text-align: center;
@@ -161,6 +163,9 @@ section > div.icones {
   padding: 6rem 2rem;
 }
 */
+.projetos {
+  border-bottom: 2px solid var(--cor-botoes);
+}
 .projetos-titulo {
   text-align: center;
   font-size: 1.7rem;
@@ -215,7 +220,8 @@ section > div.icones {
 }
 
 section#servicos {
-  height: 100vh;
+  /*height: 100vh;*/
+  border-bottom: 2px solid var(--cor-botoes);
 }
 .titulo-servico {
   text-align: center;
