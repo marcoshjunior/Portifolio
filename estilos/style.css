@@ -122,6 +122,7 @@ section > div.icones {
 .icones > ul {
   list-style: none;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   gap: 15px;
   color: var(--cor-texto-principal);
