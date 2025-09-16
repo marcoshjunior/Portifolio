@@ -99,7 +99,7 @@ section.inicio > div {
 }
 
 section.sobre {
-  height: 100vh;
+  /*height: 100vh;*/
   border-bottom: 2px solid var(--cor-botoes);
 }
 section.sobre h2 {
