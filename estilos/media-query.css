@@ -1,9 +1,13 @@
 @media screen and (max-width: 768px) {
-  menu > a {
+  menu > div {
     display: none;
   }
   menu {
     justify-content: center;
+  }
+  section.inicio > .inicio-texto {
+    text-align: center;
+    width: 90%;
   }
 }
 @media screen and (max-width: 600px) {
