@@ -87,7 +87,7 @@ main {
 }
 
 section.inicio {
-  height: 90vh;
+  height: 100vh;
   font-size: larger;
   color: var(--cor-texto-principal);
   display: flex;
@@ -105,7 +105,30 @@ section.inicio > div > h1 > span {
 }
 section.inicio > .inicio-texto {
   text-align: center;
-  width: 60%;
+  width: 55%;
+}
+.minhas-redes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; /*talvez não precise*/
+}
+.redes {
+  margin: 0px 22px 0px 22px; /*grande demais*/
+  text-align: center;
+}
+.redes i {
+  font-size: 40px;
+}
+.redes a {
+  text-decoration: none;
+  color: var(--cor-botoes);
+}
+.redes a:hover {
+  text-decoration: underline;
+  color: var(--cor-botoes-hover);
+}
+.redes p {
+  margin-top: 5px;
 }
 
 section.sobre {
@@ -268,33 +291,6 @@ section#servicos {
   text-align: center;
   overflow-wrap: break-word;
   overflow: hidden;
-}
-
-.titulo-redes {
-  text-align: center;
-  font-size: 1.7em;
-}
-.minhas-redes {
-  display: flex;
-  justify-content: center;
-}
-.redes {
-  margin: 40px;
-  text-align: center;
-}
-.redes i {
-  font-size: 40px;
-}
-.redes a {
-  text-decoration: none;
-  color: var(--cor-botoes);
-}
-.redes a:hover {
-  text-decoration: underline;
-  color: var(--cor-botoes-hover);
-}
-.redes p {
-  margin-top: 5px;
 }
 
 footer {

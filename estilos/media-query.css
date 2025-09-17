@@ -7,14 +7,19 @@
   }
   section.inicio > .inicio-texto {
     text-align: center;
-    width: 90%;
+    width: 75%;
   }
 }
 @media screen and (max-width: 600px) {
   .servico-caixas {
     width: 100%;
   }
+  section.inicio > .inicio-texto {
+    text-align: center;
+  }
 }
-
-@media screen and (min-width: 992px) and (max-width: 1600px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  section.inicio > div {
+    text-align: center;
+  }
 }
