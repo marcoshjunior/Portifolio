@@ -1,7 +1,4 @@
 @media screen and (max-width: 768px) {
-  menu > div {
-    display: none;
-  }
   menu {
     justify-content: center;
   }
