@@ -12,71 +12,51 @@
 
 * {
   font-family: Arial, Helvetica, sans-serif;
-  border: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: var(--cor-margens);
-}
-
-html {
-  /*talvez não precise*/
-  scroll-padding-top: 70px;
-  scroll-behavior: smooth;
+  background-color: var(--cor-principal);
 }
 
 menu {
-  background-color: var(--cor-principal);
+  background-color: var(--cor-botoes);
   font-weight: bold;
-  margin: -10px 0px 0px 0px;
   box-shadow: 0px 5px 7px var(--cor-sombra-do-nav);
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 12px 10px;
 
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  z-index: 1000;
-
-  padding-top: 20px;
 }
-menu > ul {
+menu p {
+  color: var(--cor-principal);
+}
+menu ul {
   list-style: none;
   display: flex;
   gap: 3px;
-  margin: 0px; /*talvez não precise*/
-  padding-top: 8px;
 }
-.navegacao {
-  color: var(--cor-botoes);
+menu ul .links {
+  color: var(--cor-principal);
   text-decoration: none;
-  padding: 0px 10px 0px 10px; /*talvez precise mudar*/
+  padding: 0px 7px;
   transition-duration: 0.1s;
 }
-.navegacao:hover {
-  color: var(--cor-principal);
-  background-color: var(--cor-botoes);
-  border-radius: 30px;
+menu ul .links:hover {
+  color: var(--cor-botoes);
+  background-color: var(--cor-margens);
+  border-radius: 10px;
 }
 /*
-menu > a {
-  color: var(--cor-principal);
-  background-color: var(--cor-botoes);
-  padding: 5px 6px 5px 6px;
-  border-radius: 30px;
-  text-decoration: none;
-  transition-duration: 0.1s;
-  display: block;
+menu {
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
-menu > a:hover {
-  background-color: var(--cor-principal);
-  color: var(--cor-botoes);
-}
-  */
 
 main {
   min-width: 300px;
@@ -110,10 +90,10 @@ section.inicio > .inicio-texto {
 .minhas-redes {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center; /*talvez não precise*/
+  justify-content: center;
 }
 .redes {
-  margin: 0px 22px 0px 22px; /*grande demais*/
+  margin: 0px 22px 0px 22px;
   text-align: center;
 }
 .redes i {
@@ -132,7 +112,7 @@ section.inicio > .inicio-texto {
 }
 
 section.sobre {
-  /*height: 100vh;*/
+  height: 100vh;
   border-bottom: 2px solid var(--cor-botoes);
 }
 section.sobre h2 {
@@ -191,12 +171,6 @@ section > div.icones {
   background-color: var(--cor-botoes-hover);
 }
 
-/*
-.projetos {
-  padding: 1rem 2rem;
-  padding: 6rem 2rem;
-}
-*/
 .projetos {
   padding-bottom: 10px;
   border-bottom: 2px solid var(--cor-botoes);
@@ -212,13 +186,13 @@ section > div.icones {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2em;
   max-width: 1200px;
-  margin: 0 auto; /*não muda nada*/
+  margin: 0 auto;
 }
 .projetos-card {
   background-color: var(--cor-cards);
   border-radius: 16px;
   backdrop-filter: blur(5px);
-  border: 1px solid var(--cor-margens); /*talvez não precise*/
+  border: 1px solid var(--cor-margens);
   overflow: hidden;
   transition: all 0.2s ease;
 }
@@ -255,7 +229,7 @@ section > div.icones {
 }
 
 section#servicos {
-  /*height: 100vh;*/
+  height: 100vh;
   border-bottom: 2px solid var(--cor-botoes);
 }
 .titulo-servico {
@@ -299,3 +273,4 @@ footer {
   padding: 5px;
   margin: 0px -10px -10px -10px;
 }
+*/
