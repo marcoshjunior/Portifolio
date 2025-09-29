@@ -21,117 +21,129 @@ body {
   background-color: var(--cor-principal);
 }
 
-menu {
+header {
   background-color: var(--cor-botoes);
   font-weight: bold;
   box-shadow: 0px 5px 7px var(--cor-sombra-do-nav);
   display: flex;
-  justify-content: space-between;
-  padding: 12px 10px;
-
+  justify-content: center;
+  padding: 14px 10px;
+  /*
   position: fixed;
   width: 100%;
+  */
+  /*
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  */
 }
-menu p {
+header p {
+  display: none;
   color: var(--cor-principal);
 }
-menu ul {
+header ul {
   list-style: none;
   display: flex;
   gap: 3px;
 }
-menu ul .links {
+header ul .links {
   color: var(--cor-principal);
   text-decoration: none;
-  padding: 0px 7px;
+  padding: 7px 7px;
   transition-duration: 0.1s;
 }
-menu ul .links:hover {
+header ul .links:hover {
   color: var(--cor-botoes);
   background-color: var(--cor-margens);
   border-radius: 10px;
 }
-/*
-menu {
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-
 main {
-  min-width: 300px;
-  max-width: 1000px;
-  margin: auto;
-  padding: 25px;
-  background-color: var(--cor-principal);
+  padding-top: 20px; /*altura para a navbar*/
+  display: grid;
+  grid-template-columns: auto 90vw auto;
+  gap: 20px;
+}
+section {
+  background-color: var(--cor-margens);
+  padding: 20px;
+  border-radius: 8px;
+  grid-column: 2;
+  /*height: 100vh;*/
 }
 
-section.inicio {
-  height: 100vh;
-  font-size: larger;
-  color: var(--cor-texto-principal);
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 2px solid var(--cor-botoes);
+section.sobre .sobre-inicio {
+  text-align: center;
+  margin: 10px 0px;
 }
-section.inicio > div {
-  text-align: left;
-  margin: 15px;
-}
-section.inicio > div > h1 > span {
+section.sobre .sobre-inicio span {
   color: var(--cor-botoes);
 }
-section.inicio > .inicio-texto {
-  text-align: center;
-  width: 55%;
+section.sobre .sobre-inicio p {
+  padding: 10px 0px;
 }
-.minhas-redes {
+section.sobre .sobre-texto {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+}
+section.sobre .minhas-redes {
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
+  flex-flow: row wrap;
 }
-.redes {
-  margin: 0px 22px 0px 22px;
+section.sobre .minhas-redes .redes {
+  margin: 30px 22px;
   text-align: center;
 }
-.redes i {
-  font-size: 40px;
+section.sobre .minhas-redes .redes i {
+  font-size: 30px;
 }
-.redes a {
+section.sobre .minhas-redes .redes a {
   text-decoration: none;
   color: var(--cor-botoes);
+  transition-duration: 0.2s;
 }
-.redes a:hover {
+section.sobre .minhas-redes .redes a:hover {
   text-decoration: underline;
   color: var(--cor-botoes-hover);
 }
-.redes p {
+section.sobre .minhas-redes .redes p {
   margin-top: 5px;
 }
-
-section.sobre {
-  height: 100vh;
-  border-bottom: 2px solid var(--cor-botoes);
-}
-section.sobre h2 {
-  text-align: center;
-  font-size: 1.7rem;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: var(--cor-texto-principal);
-}
-section > div.sobreMim > p {
-  padding: 20px 0px 20px 0px;
+section.sobre a.link-curriculo {
+  background-color: var(--cor-botoes);
+  color: var(--cor-principal);
+  text-decoration: none;
+  padding: 7px 0px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
   margin: auto;
-  max-width: 600px;
-  text-align: center;
-  color: var(--cor-texto-secundario);
+  width: 60%;
+  transition-duration: 0.1s;
 }
-section > div.icones {
-  padding: 20px 0px 20px 0px;
+section.sobre a.link-curriculo:hover {
+  color: var(--cor-principal);
+  background-color: var(--cor-botoes-hover);
 }
+/*
+.sobre > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor-principal);
+  background-color: var(--cor-botoes);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px 10px 0px;
+  border-radius: 20px;
+  transition-duration: 0.1s;
+}
+
 .icones > ul {
   list-style: none;
   display: flex;
@@ -150,25 +162,6 @@ section > div.icones {
 .icones li:hover {
   background-color: var(--cor-botoes-hover);
   color: var(--cor-principal);
-}
-.sobre > a {
-  text-decoration: none;
-  font-weight: bold;
-  color: var(--cor-principal);
-  background-color: var(--cor-botoes);
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  max-width: 400px;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0px 10px 0px;
-  border-radius: 20px;
-  transition-duration: 0.1s;
-}
-.sobre > a:hover {
-  color: black;
-  background-color: var(--cor-botoes-hover);
 }
 
 .projetos {
