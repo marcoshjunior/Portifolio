@@ -71,6 +71,9 @@ section {
   grid-column: 2;
   /*height: 100vh;*/
 }
+section h2 {
+  margin-bottom: 20px;
+}
 /*-----------------------------------------------------------------------*/
 section.sobre .sobre-inicio {
   text-align: center;
@@ -129,6 +132,7 @@ section.skills .caixa-skills {
   padding: 20px;
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
   align-items: center;
   gap: 50px;
 }
@@ -139,12 +143,15 @@ section.skills .caixa-skills .itens-skills {
   padding: 20px;
 }
 section.skills .caixa-skills .itens-skills h3 {
+  text-align: center;
   margin-bottom: 20px;
 }
 section.skills .caixa-skills .itens-skills ul {
   display: flex;
   flex-flow: row wrap;
-  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 section.skills .caixa-skills .itens-skills ul li {
   list-style: none;
@@ -154,84 +161,102 @@ section.skills .caixa-skills .itens-skills ul li {
   border-radius: 20px;
 }
 /*-----------------------------------------------------------------------*/
-/*
-.icones > ul {
-  list-style: none;
+section.formacoes #container-formacao {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 15px;
-  color: var(--cor-texto-principal);
+  flex-direction: column;
+  gap: 20px;
 }
-.icones li {
-  padding: 5px 15px 5px 15px;
-  border: 1.5px solid var(--cor-botoes);
-  border-radius: 20px;
-  transition-duration: 0.1s;
+section.formacoes #container-formacao .curso {
+  background-color: var(--cor-principal);
+  border-radius: 8px;
+  border-left: 5px solid var(--cor-botoes);
+  padding: 10px 10px 10px 13px;
+  transition: border-width 0.5s, border-color 0.5s;
+}
+section.formacoes #container-formacao .curso:hover {
+  border-left-width: 15px;
+  border-color: var(--cor-botoes-hover);
   cursor: pointer;
 }
-.icones li:hover {
-  background-color: var(--cor-botoes-hover);
-  color: var(--cor-principal);
+section.formacoes #container-formacao .periodo {
+  font-size: 0.8em;
+  font-weight: bold;
 }
-
-.projetos {
-  padding-bottom: 10px;
-  border-bottom: 2px solid var(--cor-botoes);
+section.formacoes #container-formacao .instituicao {
+  font-size: 1.3em;
 }
-.projetos-titulo {
+/*-----------------------------------------------------------------------*/
+/*
+section.projetos .projetos-titulo {
   text-align: center;
   font-size: 1.7rem;
   padding-bottom: 20px;
   color: var(--cor-texto-principal);
 }
-.projetos-caixa {
+*/
+section.projetos .projetos-caixa {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2em;
   max-width: 1200px;
   margin: 0 auto;
 }
-.projetos-card {
+section.projetos .projetos-caixa .projetos-card {
   background-color: var(--cor-cards);
   border-radius: 16px;
   backdrop-filter: blur(5px);
   border: 1px solid var(--cor-margens);
   overflow: hidden;
-  transition: all 0.2s ease;
+  transition: transform 0.3s;
 }
-.projetos-card:hover {
-  box-shadow: 0 10px 20px var(--cor-backcards);
-  transform: translateY(-10px) scale(1.03);
+section.projetos .projetos-caixa .projetos-card:hover {
+  box-shadow: 0px 10px 20px var(--cor-backcards);
+  transform: translateY(-10px) scale(1.02);
 }
-.projetos-imagem {
+section.projetos .projetos-caixa .projetos-card .projetos-imagem {
   height: 330px;
   width: 100%;
   object-fit: cover;
 }
-.caixa-texto-projetos {
+section.projetos .projetos-caixa .projetos-card .caixa-texto-projetos {
   padding: 0px 20px 15px 20px;
 }
-.info-projetos {
-  margin-bottom: 5px;
+section.projetos
+  .projetos-caixa
+  .projetos-card
+  .caixa-texto-projetos
+  .info-projetos {
+  margin: 10px 0px;
 }
-.paragrafo-projetos {
-  line-height: 1.25rem;
+section.projetos
+  .projetos-caixa
+  .projetos-card
+  .caixa-texto-projetos
+  .paragrafo-projetos {
+  line-height: 1.25em;
 }
-.link-projetos {
+section.projetos
+  .projetos-caixa
+  .projetos-card
+  .caixa-texto-projetos
+  .link-projetos {
   text-decoration: none;
-  color: black;
+  color: var(--cor-principal);
   background-color: var(--cor-botoes);
   padding: 7px;
   border-radius: 15px;
   display: flex;
   justify-content: center;
 }
-.link-projetos:hover {
+section.projetos
+  .projetos-caixa
+  .projetos-card
+  .caixa-texto-projetos
+  .link-projetos:hover {
   background-color: var(--cor-botoes-hover);
-  color: black;
 }
-
+/*-----------------------------------------------------------------------*/
+/*
 section#servicos {
   height: 100vh;
   border-bottom: 2px solid var(--cor-botoes);
