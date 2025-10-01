@@ -178,22 +178,17 @@ section.formacoes #container-formacao .curso:hover {
   border-color: var(--cor-botoes-hover);
   cursor: pointer;
 }
-section.formacoes #container-formacao .periodo {
+section.formacoes #container-formacao .curso .periodo {
   font-size: 0.8em;
   font-weight: bold;
 }
-section.formacoes #container-formacao .instituicao {
+section.formacoes #container-formacao .curso .instituicao {
   font-size: 1.3em;
 }
-/*-----------------------------------------------------------------------*/
-/*
-section.projetos .projetos-titulo {
-  text-align: center;
-  font-size: 1.7rem;
-  padding-bottom: 20px;
-  color: var(--cor-texto-principal);
+section.formacoes #container-formacao .curso .titulacao {
+  font-weight: bold;
 }
-*/
+/*-----------------------------------------------------------------------*/
 section.projetos .projetos-caixa {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -244,6 +239,7 @@ section.projetos
   color: var(--cor-principal);
   background-color: var(--cor-botoes);
   padding: 7px;
+  margin-top: 10px;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -256,46 +252,45 @@ section.projetos
   background-color: var(--cor-botoes-hover);
 }
 /*-----------------------------------------------------------------------*/
+section#servicos .container-servicos {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+section#servicos .container-servicos .servico-caixas {
+  text-align: center;
+  border: 2px solid var(--cor-botoes);
+  border-radius: 20px;
+  padding: 13px;
+  /*
+  overflow-wrap: break-word;
+  overflow: hidden;
+  */
+  /*
+  width: 40%;
+  height: 50%;
+  */
+}
+section#servicos .container-servicos .servico-caixas h3 {
+  font-size: 1.6em;
+  margin-bottom: 7px;
+}
+section#servicos .container-servicos .servico-caixas p {
+  max-width: 600px;
+  /*text-indent: 20px;*/
+  /*height: auto;*/
+}
+/*-----------------------------------------------------------------------*/
 /*
 section#servicos {
   height: 100vh;
-  border-bottom: 2px solid var(--cor-botoes);
-}
-.titulo-servico {
-  text-align: center;
-  font-size: 1.7rem;
-  padding-top: 20px;
-  color: var(--cor-texto-principal);
 }
 .servicos {
   margin-top: 70px;
   padding-bottom: 70px;
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 10px;
-  column-gap: 10px;
 }
-.servicos p {
-  max-width: 600px;
-  text-indent: 20px;
-  height: auto;
-  color: var(--cor-texto-secundario);
-}
-.servico-caixas h1 {
-  color: var(--cor-texto-principal);
-}
-.servico-caixas {
-  border: 2px solid var(--cor-margens);
-  border-radius: 20px;
-  margin: auto;
-  width: 40%;
-  height: 50%;
-  padding: 10px;
-  text-align: center;
-  overflow-wrap: break-word;
-  overflow: hidden;
-}
-
 footer {
   background-color: var(--cor-botoes);
   text-align: center;
