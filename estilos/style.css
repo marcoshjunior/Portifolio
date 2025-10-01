@@ -115,6 +115,7 @@ section.sobre a.link-curriculo {
   background-color: var(--cor-botoes);
   color: var(--cor-principal);
   text-decoration: none;
+  font-weight: bold;
   padding: 7px 0px;
   border-radius: 20px;
   display: flex;
@@ -241,6 +242,7 @@ section.projetos
   padding: 7px;
   margin-top: 10px;
   border-radius: 15px;
+  font-weight: bold;
   display: flex;
   justify-content: center;
 }
@@ -283,6 +285,16 @@ section#servicos .container-servicos .servico-caixas p {
   /*height: auto;*/
 }
 /*-----------------------------------------------------------------------*/
+footer {
+  background-color: var(--cor-botoes);
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+}
+footer span {
+  color: var(--cor-principal);
+}
+/*-----------------------------------------------------------------------*/
 /*
 section#servicos {
   height: 100vh;
@@ -290,11 +302,5 @@ section#servicos {
 .servicos {
   margin-top: 70px;
   padding-bottom: 70px;
-}
-footer {
-  background-color: var(--cor-botoes);
-  text-align: center;
-  padding: 5px;
-  margin: 0px -10px -10px -10px;
 }
 */
