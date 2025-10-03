@@ -7,16 +7,12 @@
   }
 }
 
-/*
 @media screen and (max-width: 768px) {
-  menu {
-    justify-content: center;
-  }
-  section.inicio > .inicio-texto {
-    text-align: center;
-    width: 75%;
+  section.projetos .projetos-caixa .projetos-card .projetos-imagem {
+    height: 400px;
   }
 }
+/*
 @media screen and (max-width: 600px) {
   .servico-caixas {
     width: 100%;
