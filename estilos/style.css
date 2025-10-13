@@ -16,7 +16,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  /*rolagem suave no click dos links*/
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--cor-principal);
 }
@@ -28,15 +31,9 @@ header {
   display: flex;
   justify-content: center;
   padding: 14px 10px;
-  /*
-  position: fixed;
-  width: 100%;
-  */
-  /*
+  position: sticky;
   top: 0;
-  left: 0;
-  z-index: 1000;
-  */
+  z-index: 1;
 }
 header p {
   display: none;
@@ -69,6 +66,7 @@ section {
   padding: 20px;
   border-radius: 8px;
   grid-column: 2;
+  scroll-margin-top: 67px; /*click dos links*/
   /*height: 100vh;*/
 }
 section h2 {
