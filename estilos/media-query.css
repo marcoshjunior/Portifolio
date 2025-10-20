@@ -5,10 +5,23 @@
   header p {
     display: block;
   }
+  section .caixa-skills .item {
+    flex: 1 1 calc(50% - 20px);
+  }
+  /*
+  section .caixa-skills ul {
+    gap: 0px;
+    li {
+      width: 45%;
+      margin-bottom: 15px;
+      margin-left: 20px;
+    }
+  }
+    */
 }
 
 @media screen and (max-width: 768px) {
-  section.projetos .projetos-caixa .projetos-card .projetos-imagem {
+  section .projetos-caixa .projetos-card .projetos-imagem {
     height: 400px;
   }
 }
