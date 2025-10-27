@@ -5,19 +5,36 @@
   header p {
     display: block;
   }
-  section .caixa-skills .item {
-    flex: 1 1 calc(50% - 20px);
+  main {
+    grid-template-columns: auto 300px 1fr auto;
   }
-  /*
-  section .caixa-skills ul {
-    gap: 0px;
-    li {
-      width: 45%;
-      margin-bottom: 15px;
-      margin-left: 20px;
+  section#sobre {
+    grid-column: 2/3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+    .sobre-inicio {
+      margin: 0px 0px;
+    }
+    .sobre-texto {
+      width: 93%;
+    }
+    a.link-curriculo {
+      width: 90%;
     }
   }
-    */
+  section#skills,
+  #formacoes,
+  #projetos,
+  #servicos {
+    grid-column: 3/4;
+  }
+  section#skills #skill-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  footer {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -25,18 +42,3 @@
     height: 400px;
   }
 }
-/*
-@media screen and (max-width: 600px) {
-  .servico-caixas {
-    width: 100%;
-  }
-  section.inicio > .inicio-texto {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  section.inicio > div {
-    text-align: center;
-  }
-}
-*/
