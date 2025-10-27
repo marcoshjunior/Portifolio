@@ -15,82 +15,85 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <html>
-    <body>
-      <header>
-        <p>MarcosJr</p>
-        <ul>
-          <li><a href="#sobre" class="links">Inicio</a></li>
-          <li><a href="#skills" class="links">Skills</a></li>
-          <li><a href="#formacoes" class="links">Formações</a></li>
-          <li><a href="#projetos" class="links">Projetos</a></li>
-          <li><a href="#servicos" class="links">Serviços</a></li>
-        </ul>
-      </header>
-      <main>
-        <!--Sobre-->
-        <section id="sobre">
-          <div class="sobre-inicio">
-            <p>Bem vindo!</p>
-            <h1>Olá, eu nome é <span class="nome">Marcos</span></h1>
-            <p>
-              <i class="fa-solid fa-code"></i> Desenvolvedor Web
-              <i class="fa-solid fa-code"></i>
-            </p>
+  <body>
+    <header>
+      <div class="logo">Marcos JR</div>
+      <nav id="menu">
+        <a href="#ficha">sobre</a>
+        <a href="#skills">skills</a>
+        <a href="#formacoes">formações</a>
+        <a href="#projetos">projetos</a>
+        <a href="#servicos">serviços</a>
+      </nav>
+      <div class="menu-btn" id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <main>
+      <section id="ficha">
+        <div class="sobre">
+          <p>Bem vindo!</p>
+          <h1>Olá, eu nome é <span class="nome">Marcos</span></h1>
+          <p>
+            <i class="fa-solid fa-code"></i> Desenvolvedor Web
+            <i class="fa-solid fa-code"></i>
+          </p>
+        </div>
+        <div class="sobre-texto">
+          <p>
+            Sou estudante de Tecnologia da Informação e Programação sempre em
+            busca de aprendizado. Tenho interesse em desenvolvimento web e
+            mobile.
+          </p>
+          <p>
+            Atualmente, estudo HTML, CSS e JavaScript, desenvolvendo projetos
+            próprios para praticar e aperfeiçoar minhas habilidades no
+            front-end. Também estudando back-end, buscando entender melhor o
+            funcionamento completo das aplicações web e evoluir como
+            desenvolvedor full stack.
+          </p>
+        </div>
+        <div class="minhas-redes">
+          <div class="redes">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/marcos-junior1"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
           </div>
-          <div class="sobre-texto">
-            <p>
-              Sou estudante de Tecnologia da Informação e Programação sempre em
-              busca de aprendizado. Tenho interesse em desenvolvimento web e
-              estou construindo minha carreira com dedicação e curiosidade.
-            </p>
-            <p>
-              Atualmente, estudo HTML, CSS e JavaScript, desenvolvendo projetos
-              próprios para praticar e aperfeiçoar minhas habilidades no
-              front-end. Também estou começando meus estudos em back-end,
-              buscando entender melhor o funcionamento completo das aplicações
-              web e evoluir como desenvolvedor full stack.
-            </p>
+          <div class="redes">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/marcoshjunior"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
           </div>
-          <div class="minhas-redes">
-            <div class="redes">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/marcos-junior1"
-              >
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-            </div>
-            <div class="redes">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/marcoshjunior"
-              >
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
-            <div class="redes">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="mailto:marcosjuniorbrito6@gmail.com"
-              >
-                <i class="fa-solid fa-envelope"></i>
-              </a>
-            </div>
+          <div class="redes">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="mailto:marcosjuniorbrito6@gmail.com"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </a>
           </div>
-          <a
-            class="link-curriculo"
-            href="curriculo/Marcos-curriculo.pdf"
-            download="Curriculo-marcos.pdf"
-            type="applicaton/pdf"
-            >Baixar CV</a
-          >
-        </section>
-        <!--Skills-->
-        <section id="skills">
+        </div>
+        <a
+          class="link-curriculo"
+          href="curriculo/Marcos-curriculo.pdf"
+          download="Curriculo-marcos.pdf"
+          type="applicaton/pdf"
+          >Baixar CV</a
+        >
+      </section>
+      <section id="detalhes">
+        <article id="skills">
           <h2>Skills</h2>
           <div id="skill-container">
             <div class="item">
@@ -157,9 +160,8 @@
               <div class="barra"></div>
             </div>
           </div>
-        </section>
-        <!--formação-->
-        <section id="formacoes">
+        </article>
+        <article id="formacoes">
           <h2>Formações/Cursos</h2>
           <div id="container-formacao">
             <div class="curso">
@@ -190,23 +192,16 @@
               <p class="titulacao">Logica de Programação com JavaScript</p>
             </div>
           </div>
-        </section>
-        <!--Projetos-->
-        <section id="projetos">
+        </article>
+        <article id="projetos">
           <h2>Projetos</h2>
-          <div class="projetos-caixa">
-            <div class="projetos-card">
-              <img
-                class="projetos-imagem"
-                src="img/img-calculoIMC.png"
-                alt=""
-              />
-              <div class="caixa-texto-projetos">
-                <h3 class="info-projetos">Calculo de IMC</h3>
-                <p class="paragrafo-projetos">
-                  Uma calculadora de IMC baseado do seu peso e altura feito em
-                  HTML, CSS e JavaScript.
-                </p>
+          <div id="projeto-container">
+            <div class="projeto">
+              <img src="img/img-calculoIMC.png" alt="Projeto 1" class="foto" />
+              <div class="projeto-info">
+                <p class="periodo">2025</p>
+                <h3 class="titulo">Calculo de IMC</h3>
+                <p>Uma calculadora de IMC baseado do seu peso e altura.</p>
                 <a
                   class="link-projetos"
                   href="https://marcoshjunior.github.io/CalcularIMC/"
@@ -214,31 +209,25 @@
                   rel="noopener noreferrer"
                   >Abrir Projeto</a
                 >
+                <details class="descricao">
+                  <summary>Saiba mais...</summary>
+                  <p>
+                    O projeto foi desenvolvido para praticar lógica de
+                    programação e manipulação do DOM com JavaScript.
+                    <span>Tecnologias:</span> HTML, CSS, JavaScript
+                    <span>Função:</span>
+                    Cálculo automático e exibição da classificação do IMC
+                    (abaixo do peso, normal, sobrepeso, etc.).
+                  </p>
+                </details>
               </div>
             </div>
-            <div class="projetos-card">
-              <img class="projetos-imagem" src="img/img-login.png" alt="" />
-              <div class="caixa-texto-projetos">
-                <h3 class="info-projetos">Pagina de Login</h3>
-                <p class="paragrafo-projetos">
-                  Uma pagina de Login criada com HTML e CSS
-                </p>
-                <a
-                  class="link-projetos"
-                  href="https://marcoshjunior.github.io/Login/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Abrir Projeto</a
-                >
-              </div>
-            </div>
-            <div class="projetos-card">
-              <img class="projetos-imagem" src="img/img-linktree.png" alt="" />
-              <div class="caixa-texto-projetos">
-                <h3 class="info-projetos">Linktree</h3>
-                <p class="paragrafo-projetos">
-                  uma página de links estilo Linktree usando HTML e CSS puros.
-                </p>
+            <div class="projeto">
+              <img src="img/img-linktree.png" alt="Projeto 1" class="foto" />
+              <div class="projeto-info">
+                <p class="periodo">2024</p>
+                <h3 class="titulo">Linktree</h3>
+                <p>Página estilo “Linktree”</p>
                 <a
                   class="link-projetos"
                   target="_blank"
@@ -246,20 +235,47 @@
                   href="https://marcoshjunior.github.io/Links/"
                   >Abrir Projeto</a
                 >
+                <details class="descricao">
+                  <summary>Saiba mais...</summary>
+                  <p>
+                    O foco foi desenvolver uma interface limpa, responsiva e
+                    agradável. <span>Tecnologias:</span> HTML, CSS
+                    <span>Função:</span>
+                    Centralizar links de forma prática e estilosa.
+                  </p>
+                </details>
               </div>
             </div>
-            <div class="projetos-card">
-              <img
-                class="projetos-imagem"
-                src="img/img-advinhacao.png"
-                alt=""
-              />
-              <div class="caixa-texto-projetos">
-                <h3 class="info-projetos">Jogo da Adivinhação</h3>
-                <p class="paragrafo-projetos">
-                  Um jogo de advinhar números em 10 tentativas feito em HTML,
-                  CSS e JavaScript.
-                </p>
+            <div class="projeto">
+              <img src="img/img-login.png" alt="Projeto 1" class="foto" />
+              <div class="projeto-info">
+                <p class="periodo">2024</p>
+                <h3 class="titulo">Pagina de Login</h3>
+                <p>Tela de login estilizada</p>
+                <a
+                  class="link-projetos"
+                  href="https://marcoshjunior.github.io/Login/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Abrir Projeto</a
+                >
+                <details class="descricao">
+                  <summary>Saiba mais...</summary>
+                  <p>
+                    Desenvolvida para praticar design de formulários, validação
+                    e experiência do usuário. <span>Tecnologias:</span> HTML,
+                    CSS, JavaScript <span>Função:</span> Simulação de
+                    autenticação com feedback visual ao usuário.
+                  </p>
+                </details>
+              </div>
+            </div>
+            <div class="projeto">
+              <img src="img/img-advinhacao.png" alt="Projeto 1" class="foto" />
+              <div class="projeto-info">
+                <p class="periodo">2024</p>
+                <h3 class="titulo">Jogo da Adivinhação</h3>
+                <p>Jogo de advinhar números</p>
                 <a
                   class="link-projetos"
                   target="_blank"
@@ -267,12 +283,21 @@
                   href="https://marcoshjunior.github.io/Adivinhacao/"
                   >Abrir Projeto</a
                 >
+                <details class="descricao">
+                  <summary>Saiba mais...</summary>
+                  <p>
+                    O projeto foi criado para praticar lógica condicional,
+                    geração de números aleatórios e interatividade com o
+                    usuário. <span>Tecnologias:</span> HTML, CSS, JavaScript
+                    <span>Função:</span> Exibir mensagens de acerto, erro e
+                    dicas para o jogador.
+                  </p>
+                </details>
               </div>
             </div>
           </div>
-        </section>
-        <!--Serviços-->
-        <section id="servicos">
+        </article>
+        <article id="servicos">
           <h2>Serviços</h2>
           <div class="container-servicos">
             <div class="servico-caixas">
@@ -307,21 +332,35 @@
                 profissionais que querem mostrar seu trabalho na internet.
               </p>
             </div>
-            <!--
-              <div class="servico-caixas">
-                <h3>Criação de Site para Pequenos Negócios</h3>
-                <p>
-                  Crio sites completos para pequenos comércios como lanchonetes,
-                  salões, lojas, pet shops, entre outros. Inclui páginas como
-                  "Quem somos", "Serviços", "Galeria" e "Fale conosco".
-                </p>
-              </div>
-              -->
+            <div class="servico-caixas">
+              <h3>Criação de Site para Pequenos Negócios</h3>
+              <p>
+                Crio sites completos para pequenos comércios como lanchonetes,
+                salões, lojas, pet shops, entre outros. Inclui páginas como
+                "Quem somos", "Serviços", "Galeria" e "Fale conosco".
+              </p>
+            </div>
           </div>
-        </section>
-      </main>
-      <footer>Site criado por <span>Marcos Junior</span></footer>
-      <script src="script/script.js"></script>
-    </body>
-  </html>
+        </article>
+      </section>
+    </main>
+    <footer>Site criado por <span>Marcos Junior</span></footer>
+  </body>
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const nav = document.getElementById("menu");
+    const links = nav.querySelectorAll("a");
+
+    // Abre/fecha o menu ao clicar no hambúrguer
+    menuBtn.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+
+    // Fecha o menu ao clicar em qualquer link
+    links.forEach((link) => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("active");
+      });
+    });
+  </script>
 </html>
